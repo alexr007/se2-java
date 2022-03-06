@@ -1,0 +1,21 @@
+package api;
+
+@Controller
+public class ServerApp {
+  @GetMapping("/users/:id")
+  Optional<User> getById(@PathVariable("id") Integer id) {
+    //.....
+  }
+}
+
+class Client {
+  Optional<User> getById(Integer id) {
+    response = makeHttpRequest(GET, "/users/"+id)
+    return deserialize(response);
+  }
+}
+
+class App {
+  c = new Client();
+  Optional<User> u = c.getById()
+}
