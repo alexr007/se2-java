@@ -3,6 +3,7 @@ package l02design;
 import lombok.Value;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class SortApp {
 
   public static void main(String[] args) {
     // our data
-    List<Person> persons = new ArrayList<>(List.of(
+    List<Person> persons = new ArrayList<>(Arrays.asList(
         new Person(10, "Alex"),
         new Person(7, "Sergio"),
         new Person(4, "Zane")
